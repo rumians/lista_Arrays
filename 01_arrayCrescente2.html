@@ -4,11 +4,16 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-
-
+    const n1 = Number(prompt("Insira um numero:"))
+    const n2 = Number(prompt("Insira outro numero:"))
     //PROCESSAMENTO
-
-
+    let arrayVazio = [];
+    if (n1 > n2) {
+        arrayVazio = [n2, n1];
+    }
+    else {
+        arrayVazio = [n1, n2];
+    }
     //SAÍDA
-    
+    document.write(`Os elementos do array são: ${arrayVazio.join("-")}.`)
 </script>
