@@ -8,11 +8,17 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
+    const fruta1 = prompt("insira a 1ª fruta que deseja comprar ?")
+    const fruta2 = prompt("insira a 2ª fruta que deseja comprar ?")
+    const fruta3 = prompt("insira a 3ª fruta que deseja comprar ?")
+    const bebida1 = prompt("insira a 1ª bebida que deseja comprar ?")
+    const bebida2 = prompt("insira a 2ª bebida que deseja comprar ?")
+    const bebida3 = prompt("insira a 3ª bebida que deseja comprar ?")
+    //PROCsESSAMENTO
+    let listafrutas = [fruta1, fruta1, fruta3]
+    let listabebida = [bebida1, bebida2, bebida3];
+    let nova = listafrutas.concat(listabebida)
 
     //SAÍDA
-
+    alert(nova.join(" - "))
 </script>
