@@ -6,11 +6,14 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
 
     //ENTRADA
-
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const retirar = prompt("Qual carro deseja remover da lista: " + carrosSUV.join(", "))
+    
     //PROCESSAMENTO
-
-
+    const posiçao = carrosSUV.indexOf(retirar)
+    carrosSUV.splice(posiçao, 1);
+    alert(carrosSUV)
+    alert(carrosSUV.concat(retirar))
     //SAÍDA
 
 </script>
