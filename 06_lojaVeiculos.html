@@ -2,20 +2,51 @@
     //Problema: Loja de veículos
     //Crie os seguintes arrays:
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
+
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
+    const carro1 = prompt("Insira um carro");
+    const tipo1 = prompt("Qual o tipo do carro (1-Suv, 2-Sedan, 3-Hatch)")
+    const carro2 = prompt("Insira outro carro");
+    const tipo2 = prompt("Qual o tipo do carro (1-Suv, 2-Sedan, 3-Hatch)");
+    const carro3 = prompt("Insira mais um carro");
+    const tipo3 = prompt("Qual o tipo do carro (1-Suv, 2-Sedan, 3-Hatch)");
 
     //PROCESSAMENTO
+    if (tipo1 == 1) {
+        carrosSUV.push(carro1).join(", ")
+    } else if (tipo1 == 2) {
+        carrosSedan.push(carro1).join(", ")
+    } else if (tipo1 == 3) {
+        carrosHatch.push(carro1).join(", ")
+    }
 
+    if (tipo2 == 1) {
+        carrosSUV.push(carro2).join(", ")
+    } else if (tipo2 == 2) {
+        carrosSedan.push(carro2).join(", ")
+    } else if (tipo2 == 3) {
+        carrosHatch.push(carro2).join(", ")
+    }
+
+    if (tipo3 == 1) {
+        carrosSUV.push(carro3).join(", ")
+    } else if (tipo3 == 2) {
+        carrosSedan.push(carro3).join(", ")
+    } else if (tipo3 == 3) {
+        carrosHatch.push(carro3).join(", ")
+    }
+
+    alert()
 
     //SAÍDA
 
